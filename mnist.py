@@ -54,9 +54,9 @@ def predict(p):
         return data
 
     model = load_model()
-    data = load_img(p)
+    data = load_img(p).to(device)
 
-    out = model(data)
+    out = model(data).cpu()
     return out.max(1)[1].item(), out.detach()
 
 def main():
