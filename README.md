@@ -6,8 +6,8 @@
 
 1. run locally
 
-`git clone https://github.com/teacher144123/streamlit_prac.git`
-`cd streamlit_prac/`
+`git clone https://github.com/teacher144123/streamlit_prac.git`  
+`cd streamlit_prac/`  
 `streamlit run YOUR_SCRIPT.py`
 
 2. run remotely
