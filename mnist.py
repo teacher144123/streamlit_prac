@@ -86,8 +86,8 @@ def exist_img():
 
     pred, emb = predict(files[p_choose])
     if show_emb:
+        emb = torch.softmax(emb, 1)
         emb = emb.numpy().reshape(-1, 1)
-        # emb = np.floor(emb * 100) / 100
         st.write(emb)
     st.write(f'Predicted {pred}')
 
@@ -101,6 +101,7 @@ def upload_img():
 
         pred, emb = predict(img_f)
         if show_emb:
+            emb = torch.softmax(emb, 1)
             emb = emb.numpy().reshape(-1, 1)
             emb = np.floor(emb * 100) / 100
             st.write(emb)
