@@ -1,0 +1,10 @@
+streamlit
+torch==1.7.1
+torchvision==0.8.2
+Pillow==8.0.0
+numpy
+pandas
+altair
+requests
+bs4
+watchdog
